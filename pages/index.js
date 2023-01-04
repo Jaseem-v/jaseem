@@ -260,9 +260,12 @@ export default function Home() {
                   {
                     tools.map((el, i) => {
                       return (
-                        <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" key={i}><span
-                          className="left-img"><img src={el.image}
-                            className="tollit-icon" /></span>{el.title}</li>
+                        <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" key={i}>
+                          <span className="left-img">
+                            <img src={el.image} className="tollit-icon" />
+                          </span>
+                          {el.title}
+                        </li>
                       )
 
                     })

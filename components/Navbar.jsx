@@ -1,8 +1,12 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function Navbar() {
 
+    useEffect(() => {
+        import("bootstrap/dist/js/bootstrap");
+
+    }, [])
 
     return (
         <header id="nav" className="header header-stick header-fixed header-white-transprant">

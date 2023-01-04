@@ -637,7 +637,7 @@ button.owl-thumb-item.active img {
     min-height: 500px;
     background-color: #9AD0F2;
     margin-top: 30px;
-    background-image: url(/images/11.jpg);
+    background-image: url(/images/about-bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -654,7 +654,7 @@ button.owl-thumb-item.active img {
 }
 
 .banner1 {
-    background-image: url(/images/44.jpg);
+    background-image: url(/images/about-bg-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -662,7 +662,7 @@ button.owl-thumb-item.active img {
 }
 
 .banner2 {
-    background-image: url(/images/55.jpg);
+    background-image: url(/images/about-bg-2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -760,6 +760,10 @@ span.yellow-color {
     margin-top: 40px;
     margin-bottom: 80px;
     font-family: PlusJakartaText-Medium;
+}
+
+.right-box-w img {
+    width: 120px;
 }
 
 .drbbbile-bnt a.sec-color {
@@ -1393,6 +1397,16 @@ ul.footer-list-right li span {
     .row-reverse {
         flex-direction: column-reverse;
         /* display: flex; */
+    }
+
+    .banner2 {
+        display: none;
+    }
+
+    .github-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
