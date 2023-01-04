@@ -215,24 +215,24 @@ export default function Home() {
           <div className="row">
             <div className="col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
               <div className="head-text">
-                <h2 className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" >I'm a
+                <h2 className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" >I&apos;m a
                   <span className="sec-color"> Web Developer </span>
                   based in kerala,India. Specializing in building beautiful, functional websites
                 </h2>
-                <p className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.7s" >Hi there, I'm
-                  Jaseem. A professional web designer and developer based in Calicut,kerala . I've spent the
+                <p className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.7s" >Hi there, I&apos;m
+                  Jaseem. A professional web designer and developer based in Calicut,kerala . I&apos;ve spent the
                   last 2
                   years delivering impactful design & development solutions for a wide bandwidth of companies
-                  - from small startups to big business companies . I'm
+                  - from small startups to big business companies . I&apos;m
                   bringing my wealth of experience to clients in the South West and Nationwide. I approach
                   each new project with a full toolkit of ideas and a fresh focus to your needs. Whether
-                  you're looking for a web design, or looking for a full package of design, development and
-                  marketing whatever the size of the project, I will make sure it's set up for success.
+                  you&apos;re looking for a web design, or looking for a full package of design, development and
+                  marketing whatever the size of the project, I will make sure it&apos;s set up for success.
                   <br /><br />
                   From coffee to deployment, my priority is to fully understand your project requirements, and
                   we can discuss your project over an informal coffee or over Skype/Zoom, whichever suits you
                   best. With all assignment aims confirmed, a proposal will be designed, detailing your exact
-                  project package. After the proposal is accepted, we'll get started creating your project.
+                  project package. After the proposal is accepted, we&apos;ll get started creating your project.
                 </p>
                 <h3 className="title-sec wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.9s" >My Skills
                 </h3>
@@ -243,7 +243,7 @@ export default function Home() {
                   {
                     skillsData.map((el, i) => {
                       return (
-                        <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" >{el}</li>
+                        <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" key={i}>{el}</li>
                       )
 
                     })
@@ -260,7 +260,7 @@ export default function Home() {
                   {
                     tools.map((el, i) => {
                       return (
-                        <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" ><span
+                        <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" key={i}><span
                           className="left-img"><img src={el.image}
                             className="tollit-icon" /></span>{el.title}</li>
                       )
