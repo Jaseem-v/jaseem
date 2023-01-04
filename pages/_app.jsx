@@ -13,6 +13,8 @@ export default function App({ Component, pageProps }) {
 
 
   useEffect(() => {
+    import("bootstrap/dist/js/bootstrap");
+
     const isServer = typeof window === 'undefined'
     const WOW = !isServer ? require('wowjs').WOW : null
     new WOW().init()

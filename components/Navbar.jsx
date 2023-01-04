@@ -1,12 +1,14 @@
 import Link from 'next/link'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function Navbar() {
 
-    useEffect(() => {
-        import("bootstrap/dist/js/bootstrap");
+    const [isToggle, setIsToggle] = useState(false)
 
-    }, [])
+    const handleToggle = () => {
+        setIsToggle(!isToggle)
+    }
+
 
     return (
         <header id="nav" className="header header-stick header-fixed header-white-transprant">
@@ -19,7 +21,7 @@ export default function Navbar() {
                             <div className="navbar-header">
                                 {/* <!---TOGGLE BUTTON STARTS----> */}
                                 <button type="button" className="navbar-toggle collapsed" data-toggle="collapse"
-                                    data-target="#Navbar">
+                                    data-target="#Navbar" onClick={handleToggle}>
                                     <span className="icon-bar top-bar"></span>
                                     <span className="icon-bar middle-bar"></span>
                                     <span className="icon-bar bottom-bar"></span>
@@ -30,7 +32,9 @@ export default function Navbar() {
                                     <b className="logomail">hello@jaseem-v.com</b>
                                 </a>
 
-                                <div className="collapse navbar-collapse" id="Navbar">
+
+
+                                <div className={isToggle ? "collapse navbar-collapse in" : "collapse navbar-collapse"} id="Navbar">
                                     <ul className="nav navbar-nav navbar-right mega hover-effect">
                                         <li className="center">
                                             <Link className="scroll active" href="/">Home</Link>
