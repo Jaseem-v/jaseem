@@ -273,6 +273,10 @@ export default function Home() {
 
 
                 </ul>
+
+                <div className="head-btn wow fadeInUp more-btn" data-wow-duration="0.9s" style={{ visibility: "hidden" }}>
+                  <Link href="/my-story" className="get-btn">Get to Know Me</Link>
+                </div>
               </div>
             </div>
           </div>

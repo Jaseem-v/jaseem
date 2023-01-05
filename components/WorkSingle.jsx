@@ -40,7 +40,7 @@ export default function WorkSingle({
                 </div>
                 {isButton &&
                     <div className="head-btn wow fadeInUp more-btn" data-wow-duration="0.9s" style={{ visibility: "hidden" }}>
-                        <Link href="/works" className="get-btn">View more work</Link>
+                        <Link href="/works" className="get-btn">View more works</Link>
                     </div>}
             </div>
         </section>
