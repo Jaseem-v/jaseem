@@ -1,17 +1,29 @@
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
+import React, { useEffect, useRef, useState } from 'react'
 
 export default function Navbar() {
 
     const [isToggle, setIsToggle] = useState(false)
-
+    const [height, setHeight] = useState(263)
+    const ref = useRef(null)
     const handleToggle = () => {
         setIsToggle(!isToggle)
     }
+    const handleToggleWithDelay = () => {
+        setTimeout(() => {
+            setIsToggle(!isToggle)
+        }, 1000);
+    }
+    useEffect(() => {
+        setHeight(ref.current.clientHeight)
+        console.log(height);
+    }, [isToggle])
 
+    const router = useRouter();
 
     return (
-        <header id="nav" className="header header-stick header-fixed header-white-transprant">
+        <header id="nav" className="header header-stick header-fixed header-white-transprant" >
             <div className="header-wrap">
                 {/* <!----CONTAINER START--------> */}
                 <div className="container-sm">
@@ -20,7 +32,7 @@ export default function Navbar() {
                         <div className="container">
                             <div className="navbar-header">
                                 {/* <!---TOGGLE BUTTON STARTS----> */}
-                                <button type="button" className="navbar-toggle collapsed" data-toggle="collapse"
+                                <button type="button" className={isToggle ? "navbar-toggle collapsed in" : "navbar-toggle collapsed"} data-toggle="collapse"
                                     data-target="#Navbar" onClick={handleToggle}>
                                     <span className="icon-bar top-bar"></span>
                                     <span className="icon-bar middle-bar"></span>
@@ -34,19 +46,19 @@ export default function Navbar() {
 
 
 
-                                <div className={isToggle ? "collapse navbar-collapse in" : "collapse navbar-collapse"} id="Navbar">
+                                <div className={isToggle ? "collapse navbar-collapse in" : "collapse navbar-collapse"} id="Navbar" ref={ref} >
                                     <ul className="nav navbar-nav navbar-right mega hover-effect">
                                         <li className="center">
-                                            <Link className="scroll active" href="/">Home</Link>
+                                            <Link className={router.pathname == "/" ? "scroll active" : "scroll"} href="/" onClick={handleToggleWithDelay}>Home</Link>
                                         </li>
                                         <li className="center">
-                                            <Link className="scroll" href="/my-story">My Story</Link>
+                                            <Link className={router.pathname == "/my-story" ? "scroll active" : "scroll"} href="/my-story" onClick={handleToggleWithDelay}>My Story</Link>
                                         </li>
                                         <li className="center">
-                                            <Link className="scroll" href="/works">Works</Link>
+                                            <Link className={router.pathname == "/works" ? "scroll active" : "scroll"} href="/works" onClick={handleToggleWithDelay}>Works</Link>
                                         </li>
                                         <li className="center">
-                                            <Link className="scroll" href="/contact">Contact</Link>
+                                            <Link className={router.pathname == "/contact" ? "scroll active" : "scroll"} href="/contact" onClick={handleToggleWithDelay}>Contact</Link>
                                         </li>
                                     </ul>
                                 </div>

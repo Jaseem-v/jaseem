@@ -108,7 +108,9 @@ strong {
 }
 
 .hover-effect li a:before,
-.hover-effect li a:after {
+.hover-effect li a:after,
+.hover-effect li a.active:before,
+.hover-effect li a.active:after {
     content: '';
     position: absolute;
     width: 0%;
@@ -130,17 +132,20 @@ strong {
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a.active {
     color: #fff;
 }
 
-.hover-effect li a:hover:before {
+.hover-effect li a:hover:before,
+.hover-effect li a.active:before {
     background: #fafafa;
     width: 70%;
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.hover-effect li a:hover:after {
+.hover-effect li a:hover:after,
+.hover-effect li a.active:after {
     background: transparent;
     width: 70%;
     transition: 0s;
@@ -175,6 +180,10 @@ strong {
     border-color: transparent;
 }
 
+.navbar-default .navbar-collapse {
+    transition: all 0.5s ease-in-out;
+}
+
 .header-sticky {
     height: 70px;
     background-color: rgba(255, 255, 255, 0.92);
@@ -195,6 +204,7 @@ strong {
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+    transition: all .3s ease-in-out;
 }
 
 .navbar-default .navbar-toggle {
@@ -207,6 +217,8 @@ strong {
     width: 28px;
     height: 4px;
     border-radius: 1px;
+    transform: translateY(0px) rotate(0deg);
+
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -222,10 +234,24 @@ strong {
     margin-top: 6px;
 }
 
+.navbar-toggle.in .top-bar {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.navbar-toggle.in .bottom-bar {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.navbar-toggle.in .middle-bar {
+    opacity: 0;
+}
+
 @media (min-width: 768px) {
     .navbar-right {
         float: right !important;
     }
+
+
 }
 
 /*---- PHONE DISPLAY ----*/
@@ -234,7 +260,7 @@ strong {
 
     .hover-effect li a:before,
     .hover-effect li a:after {
-        top: 50%;
+        /* top: 50%; */
         margin-left: 38%;
         margin-right: 38%;
     }
@@ -269,6 +295,12 @@ strong {
 
     .navbar-default .nav {
         background-color: rgba(255, 255, 255, 0.92);
+    }
+
+    .hover-effect li a:hover:before,
+    .hover-effect li a.active:before {
+        width: 30%;
+        margin-left: 0px;
     }
 }
 
@@ -651,6 +683,10 @@ button.owl-thumb-item.active img {
     background-color: #000;
     min-height: 750px;
     overflow: visible;
+}
+
+#dribbble-banner.works {
+    background-image: url(/images/works.jpg);
 }
 
 .banner1 {

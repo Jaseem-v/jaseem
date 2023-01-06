@@ -193,6 +193,22 @@ export default function Mystory() {
                     </div>
                 </div>
             </section>
+
+            <section className="sec-list  works" id="dribbble-banner">
+                <div className="container">
+                    <div className="head-text github-box">
+                        <div className="right-box-w wow fadeInUp" data-wow-duration="0.5s" style={{ visibility: "hidden" }}>
+                            <p className="wow fadeInUp" data-wow-duration="0.5s" style={{ visibility: "hidden" }}>
+                                <img src="images/new-list/code.png" /> </p>
+                            <h3 className="wow fadeInUp" data-wow-duration="0.7s" style={{ visibility: "hidden" }}>See my works
+                            </h3>
+                            <div className="drbbbile-bnt wow fadeInUp" data-wow-duration="0.9s" style={{ visibility: "hidden" }}>
+                                <Link href="/works" className="sec-color">Go to work page</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
