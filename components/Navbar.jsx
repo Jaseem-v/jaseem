@@ -12,7 +12,7 @@ export default function Navbar() {
     }
     const handleToggleWithDelay = () => {
         setTimeout(() => {
-            setIsToggle(!isToggle)
+            setIsToggle(false)
         }, 1000);
     }
     useEffect(() => {

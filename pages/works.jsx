@@ -11,7 +11,7 @@ const data = [
          put ideas across clearly and quickly so that the team can easily understand, 
          give actionable feedback, and make better decisions faster.`,
         site: "https://mouzy.in/",
-        img: "images/mouzy-1.png"
+        img: "images/works/mouzy-1.png"
     },
     {
         bg: "#EEEAFF",
@@ -21,7 +21,7 @@ const data = [
          put ideas across clearly and quickly so that the team can easily understand, 
          give actionable feedback, and make better decisions faster.`,
         site: "https://blueladderconstructions.in/",
-        img: "images/blc-1.png"
+        img: "images/works/blc-1.png"
     },
     {
         bg: "#FFE2F6",
@@ -31,7 +31,7 @@ const data = [
          put ideas across clearly and quickly so that the team can easily understand, 
          give actionable feedback, and make better decisions faster.`,
         site: "https://anfield.ae",
-        img: "images/anfied-1.png"
+        img: "images/works/anfied-1.png"
     },
     {
         bg: "#FFF2EB",
@@ -41,7 +41,7 @@ const data = [
          put ideas across clearly and quickly so that the team can easily understand, 
          give actionable feedback, and make better decisions faster.`,
         site: "https://eatiz-restaurant.netlify.app/",
-        img: "images/eatiz.png"
+        img: "images/works/eatiz.png"
     },
     {
         bg: "#EEEAFF",
@@ -51,7 +51,61 @@ const data = [
          put ideas across clearly and quickly so that the team can easily understand, 
          give actionable feedback, and make better decisions faster.`,
         site: "https://angelblues.co.in/",
-        img: "images/angelblues.png"
+        img: "images/works/angelblues.png"
+    },
+
+
+    // ///////
+    {
+        bg: "#FFF2EB",
+        tags: " #Ui Design #Web Design #Web Development",
+        title: "Qhomes Properties",
+        description: `I can seamlessly switch between tools and use whatever helps me
+         put ideas across clearly and quickly so that the team can easily understand, 
+         give actionable feedback, and make better decisions faster.`,
+        site: "http://www.qhomesproperties.com/",
+        img: "images/works/qhomes.png"
+    },
+    {
+        bg: "#EEEAFF",
+        tags: " #Ui Design #Web Design #Web Development",
+        title: "Medisoft",
+        description: `I can seamlessly switch between tools and use whatever helps me
+         put ideas across clearly and quickly so that the team can easily understand, 
+         give actionable feedback, and make better decisions faster.`,
+        site: "http://digitronicsindia.com/",
+        img: "images/works/medisoft.png"
+    },
+    {
+        bg: "#FFE2F6",
+        tags: " #Ui Design #Web Design #Web Development",
+        title: "Camorins Studio",
+        description: `I can seamlessly switch between tools and use whatever helps me
+         put ideas across clearly and quickly so that the team can easily understand, 
+         give actionable feedback, and make better decisions faster.`,
+        site: "https://s4u-new.netlify.app/",
+        img: "images/works/camorins.png"
+    },
+    // ///////
+    {
+        bg: "#FFF2EB",
+        tags: " #Ui Design #Web Design #Web Development",
+        title: "Posluziti International",
+        description: `I can seamlessly switch between tools and use whatever helps me
+         put ideas across clearly and quickly so that the team can easily understand, 
+         give actionable feedback, and make better decisions faster.`,
+        site: "https://posluzitiinternational.com/",
+        img: "images/works/posluziti.png"
+    },
+    {
+        bg: "#EEEAFF",
+        tags: " #Ui Design #Web Design #Web Development",
+        title: "Armouguard Films",
+        description: `I can seamlessly switch between tools and use whatever helps me
+         put ideas across clearly and quickly so that the team can easily understand, 
+         give actionable feedback, and make better decisions faster.`,
+        site: "http://www.armourguardfilms.com/",
+        img: "images/works/armour-guard.png"
     },
     {
         bg: "#FFE2F6",
@@ -61,7 +115,7 @@ const data = [
          put ideas across clearly and quickly so that the team can easily understand, 
          give actionable feedback, and make better decisions faster.`,
         site: "https://ddots-new.netlify.app",
-        img: "images/ddots.png"
+        img: "images/works/ddots.png"
     },
 ]
 export default function works() {
