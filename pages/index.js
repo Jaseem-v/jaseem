@@ -170,8 +170,9 @@ export default function Home() {
         <div className="container">
           <div className="head-top">
             <div className="head-text">
-              <h5 className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" >Hello, I’m Jaseem -
-                Frontent Web Developer</h5>
+              <h5 className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" >Hello, I’m Jaseem
+                <span className='mobile-display'> - Frontent Web Developer
+                </span> </h5>
               <h1 className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.7s" >Passionate
                 <strong> Frontend Web Developer,</strong> experienced in <strong>creating user freindly
                   Websites</strong> &

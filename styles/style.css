@@ -1444,6 +1444,18 @@ ul.footer-list-right li span {
         align-items: center;
         justify-content: center;
     }
+
+
+}
+
+@media(max-width:500px) {
+    .mobile-display {
+        display: none;
+    }
+
+    .head-text h1 {
+        font-size: 31px;
+    }
 }
 
 /*-- RESPONSIVE CODE START --*/
