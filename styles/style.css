@@ -40,6 +40,20 @@ body {
     color: #FAFAFA;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    background-color: #192735;
+}
+
+.noice-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-image: url(../public/images/noise.gif);
+    opacity: .05;
+    z-index: 100000;
+    pointer-events: none;
 }
 
 .no-padding {
@@ -62,6 +76,8 @@ strong {
 
 .header-white-transprant {
     background-color: #2D2D40;
+    background-color: #192735;
+
 }
 
 .container-sm {
@@ -414,6 +430,7 @@ ul.dribble-gallery li {
 
 ul.dribble-gallery li .dribble-img {
     width: 100%;
+    height: 100%;
 }
 
 /*-- DRIBBLE GALLERY SECTION END --*/
@@ -528,10 +545,12 @@ p.case-st a:hover {
     border-radius: 10px;
     max-width: 560px;
     margin: auto;
+    position: relative;
 }
 
 .prodect-img img {
     width: 100%;
+    height: 100%;
 }
 
 .head-text div.btn-view {

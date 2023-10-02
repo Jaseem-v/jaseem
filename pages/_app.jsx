@@ -55,6 +55,8 @@ export default function App({ Component, pageProps }) {
 
 
       </Head>
+
+      <div className='noice-effect'></div>
       <Navbar />
       <Component {...pageProps} />
       <Footer />

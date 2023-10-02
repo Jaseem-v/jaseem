@@ -116,18 +116,14 @@ const tools = [
     image: "images/new-list/redux-icon.webp"
     , title: "Redux"
   },
-
   {
     image: "images/new-list/nodejs.webp"
     , title: "Node js"
   },
-
   {
     image: "images/new-list/git.png",
     title: "Git"
   },
-
-
   {
     image: "images/new-list/github.png"
     , title: "Github"
@@ -192,18 +188,18 @@ export default function Home() {
         <div className="container-full">
           <div className="head-text">
             <ul className="dribble-gallery">
-              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.4s" ><img
-                src="images/works/mouzy-1.png" className="dribble-img" /></li>
-              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.7s" ><img
-                src="images/works/eatiz.png" className="dribble-img" /></li>
-              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" ><img
-                src="images/works/blc-1.png" className="dribble-img" /></li>
-              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.6s" ><img
-                src="images/works/anfied-1.png" className="dribble-img" /></li>
-              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.9s" ><img
-                src="images/works/angelblues.png" className="dribble-img" /></li>
-              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.8s" ><img
-                src="images/works/ddots.png" className="dribble-img" /></li>
+              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.4s" >
+                <img src="images/works/mouzy-1.png" className="dribble-img" /></li>
+              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.7s" >
+                <img src="images/works/eatiz.png" className="dribble-img" /></li>
+              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.5s" >
+                <img src="images/works/blc-1.png" className="dribble-img" /></li>
+              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.6s" >
+                <img src="images/works/anfied-1.png" className="dribble-img" /></li>
+              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.9s" >
+                <img src="images/works/angelblues.png" className="dribble-img" /></li>
+              <li className="wow  fadeInUp" style={{ visibility: "hidden" }} data-wow-duration="0.8s" >
+                <img src="images/works/ddots.png" className="dribble-img" /></li>
 
             </ul>
           </div>

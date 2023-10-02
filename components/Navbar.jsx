@@ -39,9 +39,9 @@ export default function Navbar() {
                                     <span className="icon-bar bottom-bar"></span>
                                 </button>
                                 {/* <!---TOGGLE BUTTON END----> */}
-                                <a className="navbar-brand" href="mailto:hello@jaseem-v.com">
+                                <a className="navbar-brand" href="mailto:info@jaseemv.com">
                                     <img src="images/logo.svg" alt="" className="logo-icon" />
-                                    <b className="logomail">hello@jaseem-v.com</b>
+                                    <b className="logomail">info@jaseemv.com</b>
                                 </a>
 
 
